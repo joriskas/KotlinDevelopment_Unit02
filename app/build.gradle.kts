@@ -4,13 +4,17 @@ plugins {
 }
 
 android {
-    namespace = "com.example.artspace"
-    compileSdk = 37
+    namespace = "com.example.lemonade"
+    compileSdk {
+        version = release(36) {
+            minorApiLevel = 1
+        }
+    }
 
     defaultConfig {
-        applicationId = "com.example.artspace"
+        applicationId = "com.example.lemonade"
         minSdk = 24
-        targetSdk = 37
+        targetSdk = 36
         versionCode = 1
         versionName = "1.0"
 
